@@ -1,0 +1,60 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+
+}
+
+.section{
+    padding: 120px 0;
+    width: 100%;
+}
+.invizibil{
+    visibility: hidden;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:60px;
+    @include latime;
+}
+
+.one-column{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:60px;
+    @include latime;
+}
+
+.column-a, .column-b{
+    width:calc(50% - 30px);
+    min-width:300px ;
+}
+
+@media screen and (max-width:800px) {
+    .content{
+        flex-wrap: wrap;
+        gap:50px;
+    }
+    .column-a,.column-b{
+        width: 100%;
+    }
+    .invizibil{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .section{
+        padding:80px 0;
+    }
+}

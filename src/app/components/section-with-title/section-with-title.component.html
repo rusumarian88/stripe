@@ -1,0 +1,11 @@
+<div [ngStyle]="{background:bg}" class="section">
+    <div class="content">
+        <div class="column-a">
+            <app-subtitle-title [title]="title" [subtitle]="subtitle"></app-subtitle-title>
+            <ng-content select="[columnBelowTitle]"></ng-content></div>
+        <div class="column-b">
+            <app-subtitle-title class="invizibil"  [title]="title" [subtitle]="subtitle"></app-subtitle-title>
+            <ng-content select="[secondColumnBelowTitle]"></ng-content> </div>
+    </div>
+    <div class="one-column" select="[oneColumn]"><ng-content></ng-content></div>
+</div>

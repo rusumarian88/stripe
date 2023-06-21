@@ -1,0 +1,47 @@
+
+@import"mixins";
+@import"variables";
+
+:host{
+    display: block;
+}
+
+.subtitle{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: rgba(95, 91, 255, 1);
+    margin-bottom: 26px;
+}
+
+.title{
+    font-size: 38px;
+    line-height: 50px;
+    font-weight: 700;
+    color: rgba(10, 37, 64, 1);
+    max-width:810px;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(203, 203, 203, 1);
+    margin-top:42px;
+    max-width: 485px;
+}
+
+.subtitle.secondOption{
+    color:rgba(0, 212, 255, 1);
+}
+
+.title.secondOption{
+    color:rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    title{
+        font-size: 34px;
+        line-height: 46px;
+    }
+}

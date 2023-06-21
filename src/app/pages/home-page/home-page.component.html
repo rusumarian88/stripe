@@ -1,0 +1,58 @@
+<app-heder></app-heder>
+<app-section-with-title bg="rgba(228, 244, 255, 1)" subtitle="Unified Platform" title="A fully integrated suite of payment products">
+    <div columnBelowTitle subtitle>
+        <div class="description-sec-a">We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for <span class="words-blue">online and in-person retailers, subscriptions businesses,  software platforms marketplaces</span>,  and everything in between.</div>
+        <div class="btn-sec-a">Start with payment<span class="material-symbols-outlined icon">chevron_right</span></div>
+        <img class="img-a" src="/assets/visa-card.png">
+        <img class="img-b" src="/assets/phone.png">
+    </div>
+    <div secondColumnBelowTitle>
+        <div class="description-sec-a second">We also help companies <span class="words-blue">beat fraud, send invoices, issue virtual and physical cards, reduce friction at checkout, get financing, manage business spend</span>, and much more</div>
+        <img class="img-c" src="/assets/calculator.png">
+        <img class="img-d" src="/assets/graphic.png">
+    </div>
+</app-section-with-title>
+<app-section-with-title bg="rgba(12, 46, 78, 1)">
+    <div columnBelowTitle>
+        <app-subtitle-title [secondOption]="true" subtitle="Unified Platform" title="The world’s most powerful and easy-to-use APIs" description="We agonise over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality."></app-subtitle-title>
+        <div class="btn-sec-b">Read the docs<span class="material-symbols-outlined icon">chevron_right</span></div>
+        <div class="cards-sec-b">
+            <app-card class="card-a" *ngFor="let c of sectionBService.cards" [icon]="c.icon" [title]="c.title" [description]="c.description" [text]="c.text" [iconBtn]="c.iconBtn"></app-card>
+        </div>
+    </div>
+    <div secondColumnBelowTitle>
+        <img class="img-sec-b" src="/assets/img-sec-b.png">
+    </div>
+</app-section-with-title>
+<app-section-with-title>
+    <div oneColumn>
+        <app-subtitle-title subtitle="Why stripe" title="A technology-first approach to payments and finance"></app-subtitle-title>
+    </div>
+    <div class="cards-sec-c">
+        <app-card class="card-b" [secondOption]="true" *ngFor="let c of sectionCService.cards" [icon]="c.icon" [title]="c.title" [description]="c.description"></app-card>
+    </div>
+</app-section-with-title>
+<app-section-with-title class="section-d">
+    <div columnBelowTitle>
+        <app-subtitle-title [secondOption]="true" subtitle="Global scale" title="The backbone for internet business" description="For ambitious companies around the world, Stripe makes moving money as simple, borderless and programmable as the rest of the internet. Our teams are based in dozens of offices around the world, and we process hundreds of billions of dollars each year for startups to Fortune 500s"></app-subtitle-title>
+    </div>
+    <div class="cards-sec-d">
+        <app-card class="card-c" *ngFor="let c of sectionDService.cards" [title]="c.title" [description]="c.description"></app-card>
+    </div>
+</app-section-with-title>
+<app-section-with-title> 
+    <div columnBelowTitle>
+        <div class="title-sec-e">Ready to get started?</div>
+        <div class="description-sec-e">Explore <span class="words-blue-sec-e">Stripe Payments</span>, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business</div>
+        <div class="btns-sec-e">
+            <div class="btn first">Start now<span class="material-symbols-outlined icon first">chevron_right</span></div>
+            <div class="btn">Contact sales<span class="material-symbols-outlined icon first">chevron_right</span></div>
+        </div>
+    </div>
+    <div secondColumnBelowTitle>
+        <div class="cards-sec-e">
+            <app-card class="card-d" [secondOption]="true" [secondBtn]="true" *ngFor="let c of sectionEService.cards" [icon]="c.icon" [title]="c.title" [description]="c.description" [text]="c.text" [iconBtn]="c.iconBtn"></app-card>
+        </div>
+    </div>
+</app-section-with-title>
+<app-footer></app-footer>

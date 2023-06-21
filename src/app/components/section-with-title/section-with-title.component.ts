@@ -1,0 +1,20 @@
+import { Component, Input, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-section-with-title',
+  templateUrl: './section-with-title.component.html',
+  styleUrls: ['./section-with-title.component.scss']
+})
+export class SectionWithTitleComponent implements OnInit {
+
+  @Input() bg:string=""
+  @Input() subtitle:string=""
+  @Input() title:string=""
+
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

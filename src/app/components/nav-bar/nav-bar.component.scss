@@ -1,0 +1,79 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    width: 100%;
+    display: block;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    @include latime;
+    height: 35px;
+}
+
+.logo{
+    height:24px;
+}
+
+.menu-item{
+    display: inline-block;
+    font-size: 16px;
+    line-height:1;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin: 0 20px;
+    cursor: pointer;
+    &:hover{
+        color: black;
+    }
+}
+
+.button{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    padding: 7px 10px;
+    border-radius: 15px; 
+    background: rgba(255, 255, 255, 0.35);
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover{
+        background: black;
+    }
+}
+
+.icon{
+    width: 8px;
+    font-weight:500;
+    vertical-align: middle;
+    margin:0 10px;
+}
+
+.menu-btn{
+    font-size:22px;
+    font-weight: bold;
+    color:white;
+    padding: 6px 16px;
+    background-color:rgb(104, 77, 77);
+    border-radius: 55px;
+}
+
+
+@media screen and (min-width:900px) {
+    .menu-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:899px) {
+    .menu,.button{
+        display: none;
+    }
+}

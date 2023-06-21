@@ -1,0 +1,9 @@
+<div class="card">
+    <img class="icon" [src]="icon">
+    <div [ngClass]="{secondOption:secondOption}" class="title">{{title}}</div>
+    <div [ngClass]="{secondOption:secondOption}" class="description">{{description}}</div>
+    <div *ngIf="text" class="btn">
+        <div [ngClass]="{secondBtn:secondBtn}" class="text">{{text}}</div>
+        <img [ngClass]="{secondOption:secondOption}" class="icon-btn" [src]="iconBtn">
+    </div>
+</div>

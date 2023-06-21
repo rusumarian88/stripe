@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/stripe",
+    "site":"stripe1",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
